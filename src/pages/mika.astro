@@ -26,6 +26,24 @@ const segments: Segment[] = [
         label: "Line 1",
     },
     { type: "text", content: "." },
+    { type: "break"},
+    { type: "text", content: "In the beginning, " },
+    {
+        type: "note",
+        id: "n1",
+        content: "the terminal was dark",
+        note: "A reference to the empty prompt every project starts from — before config, before dotfiles, before niri was even niri.",
+        label: "Line 1",
+    },
+    { type: "text", content: ", and the only light came from " },
+    {
+        type: "note",
+        id: "n2",
+        content: "a blinking cursor",
+        note: "The cursor here doubles as both the literal terminal cursor and a metaphor for waiting — the moment before the first keystroke.",
+        label: "Line 1",
+    },
+    { type: "text", content: "." },
 ];
 
 ---
@@ -36,8 +54,8 @@ const segments: Segment[] = [
             <Header />
             <GeniusText
                     client:load
-                    title="Lohengrin"
-                    subtitle="Erklärung von Autumn"
+                    title="Evangelienharmonie"
+                    subtitle="Erklärung von Mika"
                     segments={segments}
             />
             <Footer />
