@@ -1,0 +1,46 @@
+---
+import "./../styles/global.css"
+
+import Header from"./../components/Header.astro"
+import Footer from "./../components/Footer.astro"
+import Layout from "../layouts/Layout.astro";
+import GeniusText from "../assets/GeniusText";
+
+import type {Segment} from "../assets/GeniusText";
+
+const segments: Segment[] = [
+    { type: "text", content: "In the beginning, " },
+    {
+        type: "note",
+        id: "n1",
+        content: "the terminal was dark",
+        note: "A reference to the empty prompt every project starts from — before config, before dotfiles, before niri was even niri.",
+        label: "Line 1",
+    },
+    { type: "text", content: ", and the only light came from " },
+    {
+        type: "note",
+        id: "n2",
+        content: "a blinking cursor",
+        note: "The cursor here doubles as both the literal terminal cursor and a metaphor for waiting — the moment before the first keystroke.",
+        label: "Line 1",
+    },
+    { type: "text", content: "." },
+];
+
+---
+
+<Layout>
+    <div class="dark:bg-gray-900 bg-blue-200 w-full h-max py-20 min-h-screen">
+        <div class="prose dark:prose-invert mx-auto w-full max-w-none md:max-w-4xl">
+            <Header />
+            <GeniusText
+                    client:load
+                    title="Lohengrin"
+                    subtitle="Erklärung von Autumn"
+                    segments={segments}
+            />
+            <Footer />
+        </div>
+    </div>
+</Layout>
