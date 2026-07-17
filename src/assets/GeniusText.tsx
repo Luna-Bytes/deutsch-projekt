@@ -79,7 +79,7 @@ export default function GeniusText({ title, subtitle, segments }: GeniusTextProp
                     (active ? "translate-y-0" : "translate-y-full md:translate-y-0")
                 }
             >
-                <div className="min-h-35 rounded-t-2xl dark:bg-gray-800 accent-blue-600 px-5 py-4 shadow-[0_-8px_24px_rgba(0,0,0,0.18)] md:rounded-xl md:shadow-none">
+                <div className="min-h-35 rounded-t-2xl dark:bg-gray-800 bg-blue-600 px-5 py-4 shadow-[0_-8px_24px_rgba(0,0,0,0.18)] md:rounded-xl md:shadow-none">
                     {active ? (
                         <>
                             <div className="mb-2.5 flex items-center justify-between">
