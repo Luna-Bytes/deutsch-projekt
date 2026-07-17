@@ -4,44 +4,75 @@ import "./../styles/global.css"
 import Header from"./../components/Header.astro"
 import Footer from "./../components/Footer.astro"
 import Layout from "../layouts/Layout.astro";
-import GeniusText from "../assets/GeniusText";
-
-import type {Segment} from "../assets/GeniusText";
+import GeniusText, {type Segment} from "../assets/GeniusText";
 
 const segments: Segment[] = [
-    { type: "text", content: "In the beginning, " },
+    { type: "text", content: "„Dort ziehen in den Himmel ein " },
     {
         type: "note",
         id: "n1",
-        content: "the terminal was dark",
-        note: "A reference to the empty prompt every project starts from — before config, before dotfiles, before niri was even niri.",
-        label: "Line 1",
+        content: "die Diener Gottes, die Gerechten und die Guten",
+        note: "Der Himmel ist nicht für alle selbstverständlich zugänglich, sondern für diejenigen, die Gott dienen und moralisch richtig handeln. „Diener Gottes“ meint gläubige Menschen; „Gerechte und Gute“ betont ethisches Verhalten.",
+        label: "Zeile 1",
     },
-    { type: "text", content: ", and the only light came from " },
+    { type: "text", content: "“ – " },
     {
         type: "note",
         id: "n2",
-        content: "a blinking cursor",
-        note: "The cursor here doubles as both the literal terminal cursor and a metaphor for waiting — the moment before the first keystroke.",
-        label: "Line 1",
+        content: "mit frohem Herzen",
+        note: "Der Eintritt in den Himmel geschieht nicht aus Zwang oder Angst, sondern voller Freude und Hoffnung.",
+        label: "Zeile 1",
+    },
+    { type: "break" },
+    {
+        type: "note",
+        id: "n3",
+        content: "In ewiger Freude lebt das edle Geschlecht der Erlösten",
+        note: "Die „Erlösten“ sind Menschen, die von Schuld und Vergänglichkeit befreit wurden. „Ewig“ hebt hervor, dass diese Freude niemals endet.",
+        label: "Zeile 2",
+    },
+    { type: "text", content: ", " },
+    {
+        type: "note",
+        id: "n4",
+        content: "in unermesslichem Reichtum, den sie sich hier verdient haben",
+        note: "Der Reichtum ist wohl nicht materiell gemeint, sondern geistlich: Nähe zu Gott, Frieden, Glückseligkeit. Die Formulierung deutet an, dass das irdische Handeln Konsequenzen für das jenseitige Leben hat.",
+        label: "Zeile 2",
     },
     { type: "text", content: "." },
-    { type: "break"},
-    { type: "text", content: "In the beginning, " },
+    { type: "break" },
     {
         type: "note",
-        id: "n1",
-        content: "the terminal was dark",
-        note: "A reference to the empty prompt every project starts from — before config, before dotfiles, before niri was even niri.",
-        label: "Line 1",
+        id: "n5",
+        content: "Gottes eigene Menschen genießen dort das ewige Licht",
+        note: "Licht ist ein traditionelles Symbol für Gott, Wahrheit, Erkenntnis und Heil. Wer zu Gott gehört, lebt dauerhaft in diesem Licht.",
+        label: "Zeile 3",
     },
-    { type: "text", content: ", and the only light came from " },
+    { type: "text", content: ", " },
     {
         type: "note",
-        id: "n2",
-        content: "a blinking cursor",
-        note: "The cursor here doubles as both the literal terminal cursor and a metaphor for waiting — the moment before the first keystroke.",
-        label: "Line 1",
+        id: "n6",
+        content: "sie sind frei von aller Furcht, weil sie auf Erden Gutes getan haben",
+        note: "Das gute Leben auf Erden führt zu innerer Sicherheit und zur Befreiung von Angst vor Tod oder Gericht.",
+        label: "Zeile 3",
+    },
+    { type: "text", content: "." },
+    { type: "break" },
+    {
+        type: "note",
+        id: "n7",
+        content: "Dort leuchtet ein unvergängliches Licht … weder Tod noch Leid gibt es dort",
+        note: "Der Himmel wird als Gegenwelt zur Erde dargestellt: keine Vergänglichkeit, kein Schmerz, kein Tod.",
+        label: "Zeile 4",
+    },
+    { type: "text", content: "." },
+    { type: "break" },
+    {
+        type: "note",
+        id: "n8",
+        content: "ich vermag diese Herrlichkeit kaum zu beschreiben",
+        note: "Der Sprecher betont, dass die himmlische Wirklichkeit die menschliche Vorstellungskraft übersteigt. Das verleiht dem Text einen ehrfürchtigen Ton.",
+        label: "Zeile 5",
     },
     { type: "text", content: "." },
 ];
